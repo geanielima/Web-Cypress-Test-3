@@ -75,7 +75,6 @@ docker run cypress-tests
 This project includes a comprehensive GitHub Actions workflow (`.github/workflows/cypress.yml`) that automatically runs tests on every push and pull request.
 
 #### Pipeline Features:
-- **Code Quality Checks**: ESLint and TypeScript type checking
 - **Multi-Browser Testing**: Automated tests on Chrome, Firefox, and Edge
 - **Test Categorization**: 
   - UI Tests (full browser matrix)
@@ -94,25 +93,20 @@ This project includes a comprehensive GitHub Actions workflow (`.github/workflow
 
 #### Workflow Jobs:
 
-1. **Code Quality** (`code-quality`)
-   - Runs ESLint for code linting
-   - Performs TypeScript type checking
-   - Must pass before tests run
-
-2. **E2E Tests** (`cypress-run`)
+1. **E2E Tests** (`cypress-run`)
    - Matrix strategy across Chrome, Firefox, and Edge
    - Uses official Cypress browser containers
    - Uploads artifacts (screenshots, videos, reports)
 
-3. **API Tests** (`api-tests`)
+2. **API Tests** (`api-tests`)
    - Dedicated job for API test execution
    - Isolated from UI tests for better organization
 
-4. **Smoke Tests** (`smoke-tests`)
+3. **Smoke Tests** (`smoke-tests`)
    - Quick validation tests on pull requests
    - Runs only essential login tests
 
-5. **Parallel Tests** (`cypress-parallel`)
+4. **Parallel Tests** (`cypress-parallel`)
    - Parallel execution on main branch pushes
    - Configured for 3 parallel containers
 
