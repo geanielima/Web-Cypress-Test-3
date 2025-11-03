@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "types": ["cypress", "node"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./cypress/*"],
+      "@fixtures/*": ["./cypress/fixtures/*"],
+      "@support/*": ["./cypress/support/*"],
+      "@pages/*": ["./cypress/support/pages/*"],
+      "@utils/*": ["./cypress/support/utils/*"]
+    }
+  },
+  "include": [
+    "cypress/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "cypress/downloads",
+    "cypress/screenshots",
+    "cypress/videos"
+  ]
+}

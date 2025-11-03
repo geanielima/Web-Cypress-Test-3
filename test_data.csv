@@ -1,0 +1,5 @@
+deviceName,year,price,cpuModel,hardDiskSize
+"Apple MacBook Pro 16",2019,1849.99,"Intel Core i9","1 TB"
+"Apple MacBook Air",2020,999.99,"Apple M1","512 GB"
+"Dell XPS 13",2021,1299.99,"Intel Core i7","1 TB"
+"HP Spectre x360",2022,1499.99,"Intel Core i5","512 GB"
